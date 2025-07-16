@@ -1,4 +1,4 @@
-
+import '../src/'
 
 function App() {
   return (

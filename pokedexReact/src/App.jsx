@@ -1,9 +1,10 @@
 import React from "react"
+import SearchHeader from "./components/SearchHeader"
 
 function App() {
   return (
     <div>
-      <h1 className="text-amber-300">Hello</h1>
+      <SearchHeader/>
     </div>
   )
 }

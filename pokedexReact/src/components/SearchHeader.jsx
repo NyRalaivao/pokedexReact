@@ -14,7 +14,10 @@ export default function SearchHeader() {
       </div>
 
       {/* Barre de recherche */}
-      <div className="flex items-center w-full max-w-xl sm:mx-4 border-2 border-cyan-500 rounded-lg overflow-hidden">
+      <div
+        className="flex items-center w-full max-w-xl sm:mx-4 rounded-lg overflow-hidden border-2"
+        style={{ borderColor: "#12CCE5" }}
+      >
         <input
           type="text"
           placeholder="Rechercher des cartes"
@@ -23,7 +26,8 @@ export default function SearchHeader() {
         />
         <button
           aria-label="Rechercher"
-          className="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 text-white cursor-pointer"
+          className="px-4 py-2 text-white cursor-pointer"
+          style={{ backgroundColor: "#12CCE5" }}
         >
           <FontAwesomeIcon icon={faSearch} />
         </button>
@@ -31,6 +35,7 @@ export default function SearchHeader() {
 
       {/* Boutons Vue */}
       <div className="flex space-x-3">
+        {/* Bouton Liste */}
         <button
           onClick={() => setView("list")}
           className={`flex items-center justify-start gap-2 px-4 py-2 rounded-md text-sm border transition text-left min-w-[100px] ${
@@ -44,14 +49,22 @@ export default function SearchHeader() {
           Liste
         </button>
 
+        {/* Bouton Grille */}
         <button
           onClick={() => setView("grid")}
           className={`flex items-center justify-start gap-2 px-4 py-2 rounded-md text-sm border transition text-left min-w-[100px] ${
             view === "grid"
-              ? "bg-cyan-400 text-white shadow-sm"
-              : "bg-cyan-200 text-cyan-800 hover:bg-cyan-300"
+              ? "text-white shadow-sm"
+              : "hover:brightness-110"
           }`}
           aria-pressed={view === "grid"}
+          style={{
+            backgroundColor: view === "grid" ? "#12CCE5" : "#D0F7FB",
+            color: view === "grid" ? "white" : "#0E8DA0",
+            borderColor: "#12CCE5",
+            borderWidth: "1px",
+            borderStyle: "solid",
+          }}
         >
           <FontAwesomeIcon icon={faThLarge} />
           Grille

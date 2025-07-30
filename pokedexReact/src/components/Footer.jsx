@@ -5,7 +5,7 @@ import imageDroite from "../assets/images/arcticons_right.png";
 
 const Footer = () => {
   return (
-    <footer className="py-2 bg-gray-100">
+    <footer className="py-2">
       <div className="container mx-auto">
           <div className="w-auto h-1 bg-transparent"></div>
         </div>

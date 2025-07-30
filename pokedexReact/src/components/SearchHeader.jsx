@@ -14,7 +14,7 @@ const SearchHeader = ({ onSearch, view, setView }) => {
   return (
     <header className="w-full flex flex-col sm:flex-row items-center justify-between px-4 sm:px-6 py-4 shadow-md bg-white/80 backdrop-blur-md gap-4 sm:gap-0">
       <div className="flex-shrink-0">
-        <img src={pokedexLogo} alt="Pokedex Logo" className="h-10 w-auto cursor-pointer" />
+        <img src={pokedexLogo} alt="Pokedex Logo" className="h-10 w-auto cursor-pointer"/>
       </div>
       <form 
         onSubmit={handleSubmit}
@@ -68,7 +68,7 @@ const SearchHeader = ({ onSearch, view, setView }) => {
             borderStyle: "solid",
           }}
         >
-          <FontAwesomeIcon icon={faTh} />
+          <FontAwesomeIcon icon={faTh}/>
           Trois cartes
         </button>
       </div>
